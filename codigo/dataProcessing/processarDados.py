@@ -2,8 +2,8 @@ import re
 import pandas as pd
 
 # Caminho do ficheiro de texto com os dados (podes substituir pelo teu caminho)
-input_file = "..\dados1"
-output_excel = "1recolha_P_dados_processados.xlsx"
+input_file = "dados2PD.yaml"
+output_excel = "2recolha_PD_dados_processados.xlsx"
 
 # Expressões regulares para capturar as informações
 distance_re = re.compile(r"Distance:\s+(\d+)\s+Confidence:\s+(\d+)%")
