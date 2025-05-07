@@ -64,6 +64,7 @@ class ROVsensors():
             print(f"Processed IMU Data: {attitude_data}")
             return attitude_data
 
+class ROVactuators():
     def set_thrust(self, thrust, connectionMAVLINK):
         """_summary_
 
@@ -80,3 +81,4 @@ class ROVsensors():
 
 if __name__ == "__main__":
     sensors = ROVsensors()
+    actuatores = ROVactuators()
