@@ -1,8 +1,10 @@
 import time
-from ROV import ROVsensors
+from ROV import ROVsensors, ROVactuators
 
 # Inicializações
 sensors = ROVsensors()
+actuators = ROVactuators()
+
 pingSensor = sensors.connectPing1D("192.168.2.2", 9090)
 mavLink = sensors.connectMAVLINK("0.0.0.0", 14550)
 
@@ -43,7 +45,7 @@ def depth_hold(target_depth):
             thrust = max(min(thrust, 2), 0)  # Limita entre -1 e 1
 
             # Envia comando de empuxo
-            sensors.set_thrust(thrust, connectionMAVLINK=mavLink)
+            actuators.set_thrust(thrust, connectionMAVLINK=mavLink)
 
             # Debug
             print(f"Alvo: {target_depth:.2f} m | Atual: {current_depth:.2f} m | Thrust: {thrust:.2f}")
