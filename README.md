@@ -74,10 +74,10 @@ $$
 ##### Ação proporcional 
 A ação proporcional produz um sinal de saída que é proporcional à amplitude do erro e(t), sendo$Kp$ a constante de proporcionalidade: $$P\underset{\text{saída}}{} = K_pe(t)$$
 ##### Ação integral
-A ação integral produz um sinal de saída que é proporcional à magnitude e à duração do erro, ou seja, ao erro acumulado. Isso fornece uma alternativa para corrigir o erro de off-set gerado pela ação proporcional e acelera a resposta do sistema, permitindo-o chegar ao valor de referência mais rapidamente. O sinal de saída do controlador PI pode ser descrito por: $$I\underset{\text{saída}}{} = K_i \int_{0}^{t} e(\tau)d\tau$$
+A ação integral produz um sinal de saída que é proporcional à magnitude e à duração do erro, ou seja, ao erro acumulado. Isso fornece uma alternativa para corrigir o erro de off-set gerado pela ação proporcional e acelera a resposta do sistema, permitindo-o chegar ao valor de referência mais rapidamente. O sinal de saída do controlador PI pode ser descrito por: $I\underset{\text{saída}}{} = K_i \int_{0}^{t} e(\tau)d\tau$
 onde $Ki$ é o ganho integral
 ##### Ação derivativa
-A ação derivativa produz um sinal de saída que é proporcional à velocidade de variação do erro: $$D\underset{\text{saída}}{} = K_d \frac{de(t)}{dt}$$onde $Kd$ é o ganho derivativo.
+A ação derivativa produz um sinal de saída que é proporcional à velocidade de variação do erro: $D\underset{\text{saída}}{} = K_d \frac{de(t)}{dt}$onde $Kd$ é o ganho derivativo.
 
 Como a mudança de cada parâmetro afeta a performance:
 ![[Pasted image 20250512113629.png]]
