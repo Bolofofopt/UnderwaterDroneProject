@@ -63,13 +63,13 @@ A análise de telemetria dos sensores é essencial para saber se é necessário 
 Um #controladorPID, na área de controlo, é um algoritmo de feedback muito usado pela sua versatilidade, facilidade de implementação e resiliência durante a sua utilização. Combina três tipos de ações, a ação proporcional (Kp), ação integral (Ki) e ação derivativa (Kd). Para alcançar um melhor desempenho do controlador PID é necessário ajustar esses valores, esse ajuste pode ser feito através do método tentativa e erro até o controlador alcançar um bom comportamento, ou, através de inteligência artificial ou algoritmos de otimização para encontrar os melhores parâmetros durante a utilização do controlador, criando um ambiente dinâmico. Apesar de ser versátil e fácil de implementar existem desafios associados, como por exemplo, ruídos no sistema (que será abordado a seguir).
 ![[Pasted image 20250512114446.png]]
 onde u(t) é o sinal de saída.
-$$
+$
 u(t) = K_pe(t) + K_i \int_0^t e(\tau)d\tau + K_p \frac{de(t)}{dt}
-$$
+$
  Transformada de Laplace: (s = frequência complexa)
- $$
+$
  L_s =  K_p+K_i/s+K_ds
- $$
+$
 
 ##### Ação proporcional 
 A ação proporcional produz um sinal de saída que é proporcional à amplitude do erro e(t), sendo$Kp$ a constante de proporcionalidade: $$P\underset{\text{saída}}{} = K_pe(t)$$
