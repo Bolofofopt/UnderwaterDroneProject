@@ -25,6 +25,7 @@ class redTrackCentroideError:
         mask_clean = cv2.morphologyEx(mask, cv2.MORPH_OPEN, self.kernel)
         mask_clean = cv2.morphologyEx(mask_clean, cv2.MORPH_CLOSE, self.kernel)
 
+        # Não é necessário, mas pode ajudar a melhorar a deteção
         contours, _ = cv2.findContours(mask_clean, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
         if not contours:
@@ -61,8 +62,13 @@ class redTrackCentroideError:
         if centroide_alvo is None:
             return None
 
+        # correção professor
+        dy = centro_imagem[0] - centroide_alvo[0]
+        dx = centro_imagem[1] - centroide_alvo[1]
+        """GPT
         dy = centroide_alvo[0] - centro_imagem[0]
         dx = centroide_alvo[1] - centro_imagem[1]
+        """
         return dy, dx
 
 if __name__ == "__main__":

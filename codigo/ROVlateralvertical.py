@@ -65,33 +65,36 @@ class ROVsensors():
             return attitude_data
 
 class ROVactuators():
-    def set_thrust(self, thrust_z, thrust_y, connectionMAVLINK):
+    def set_thrust(self, thrust_x, thrust_y, thrust_z, connectionMAVLINK):
         """Controla movimento vertical e lateral.
             Args:
                 thrust_z (float): valor de PID para vertical (-0.5 a 0.5)
                 thrust_y (float): valor de PID para lateral (-0.5 a 0.5)
+                thrust_x (float): valor fixo ou PID para frente/trás (-1.0 a 1.0)
                 connectionMAVLINK: MAVLINK connection object
+        
+            manual_control_send(
+                target_system,
+                x, y, z, r, buttons) 
+                    x → movimento para frente/trás (surge)
+                    y → movimento lateral esquerda/direita (sway)
+                    z → aceleração vertical (heave)
+                    r → yaw rate (giro no eixo Z)
+                    buttons → comandos adicionais (geralmente 0)
         """
-        """
-                manual_control_send(
-            target_system,
-            x, y, z, r, buttons) 
-                x → movimento para frente/trás (surge)
-                y → movimento lateral esquerda/direita (sway)
-                z → aceleração vertical (heave)
-                r → yaw rate (giro no eixo Z)
-                buttons → comandos adicionais (geralmente 0)
-        """
-        thrust_z = max(min(thrust_z, 0.5), -0.5) + 0.5
+        
         thrust_y = max(min(thrust_y, 0.5), -0.5)  # lateral é centrado em 0
-
+        thrust_z = max(min(thrust_z, 0.5), -0.5) + 0.5
+        thrust_x = max(min(thrust_x, 1.0), 0.0)
+        
         # Converter para escala MAVLink (-1000 a 1000)
+        x_mav = int(thrust_x * 1000)
         y_mav = int(thrust_y * 1000)
         z_mav = int(thrust_z * 1000)
 
         connectionMAVLINK.mav.manual_control_send(
             connectionMAVLINK.target_system,
-            0, y_mav, z_mav,
+            x_mav, y_mav, z_mav,
             0, 0  # yaw e botões
         )
 
