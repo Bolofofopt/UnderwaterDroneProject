@@ -65,12 +65,12 @@ class ROVsensors():
             return attitude_data
 
 class ROVactuators():
-    def set_thrust(self, thrust, connectionMAVLINK):
-        """_summary_
-
-        Args:
-            thrust (float): RESULTADO DO PID
-            connectionMAVLINK: MAVLINK connection object
+    def set_thrust(self, thrust_z, thrust_y, connectionMAVLINK):
+        """Controla movimento vertical e lateral.
+            Args:
+                thrust_z (float): valor de PID para vertical (-0.5 a 0.5)
+                thrust_y (float): valor de PID para lateral (-0.5 a 0.5)
+                connectionMAVLINK: MAVLINK connection object
         """
         """
                 manual_control_send(
@@ -82,13 +82,18 @@ class ROVactuators():
                 r → yaw rate (giro no eixo Z)
                 buttons → comandos adicionais (geralmente 0)
         """
-        thrust = max(min(thrust, 0.5), -0.5)+0.5  # Limita entre 0(reverse) e 1(full thrust)
-        if not -1 <= thrust <= 1:
-            raise ValueError("Thrust out of bounds!")
+        thrust_z = max(min(thrust_z, 0.5), -0.5) + 0.5
+        thrust_y = max(min(thrust_y, 0.5), -0.5)  # lateral é centrado em 0
+
+        # Converter para escala MAVLink (-1000 a 1000)
+        y_mav = int(thrust_y * 1000)
+        z_mav = int(thrust_z * 1000)
+
         connectionMAVLINK.mav.manual_control_send(
             connectionMAVLINK.target_system,
-            0, 0, int(thrust * 1000),  # Throttle (-1000 to 1000)
-            0, 0)
+            0, y_mav, z_mav,
+            0, 0  # yaw e botões
+        )
 
 if __name__ == "__main__":
     sensors = ROVsensors()

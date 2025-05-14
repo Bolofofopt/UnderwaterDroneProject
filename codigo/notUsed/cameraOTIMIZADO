@@ -1,0 +1,68 @@
+import cv2 # type: ignore
+import numpy as np
+
+def detectar_vermelho(Im_bgr):
+    """_summary_
+
+    Args:
+        Im_bgr (_type_): IMAGEM
+
+    Returns:
+        _type_: AREA, CENTROIDE, MASCARA
+    """
+    # Converter para HSV
+    hsv = cv2.cvtColor(Im_bgr, cv2.COLOR_BGR2HSV)
+
+    # Máscaras para vermelho (em HSV, vermelho aparece em dois intervalos)
+    lower_red1 = np.array([0, 100, 50])
+    upper_red1 = np.array([10, 255, 255])
+    lower_red2 = np.array([160, 100, 50])
+    upper_red2 = np.array([179, 255, 255])
+
+    # Combinar as duas gamas de vermelho
+    mask1 = cv2.inRange(hsv, lower_red1, upper_red1)
+    mask2 = cv2.inRange(hsv, lower_red2, upper_red2)
+    mask = cv2.bitwise_or(mask1, mask2)
+
+    # Filtrar ruído com operações morfológicas
+    kernel = np.ones((5, 5), np.uint8)
+    mask_clean = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
+    mask_clean = cv2.morphologyEx(mask_clean, cv2.MORPH_CLOSE, kernel)
+
+    # Encontrar contornos
+    contours, _ = cv2.findContours(mask_clean, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    if not contours:
+        return 0, None, mask_clean
+
+    # Pegar maior contorno
+    largest_contour = max(contours, key=cv2.contourArea)
+    area = cv2.contourArea(largest_contour)
+
+    # Calcular centroide
+    M = cv2.moments(largest_contour)
+    if M['m00'] == 0:
+        centroid = None
+    else:
+        cx = M['m10'] / M['m00']
+        cy = M['m01'] / M['m00']
+        centroid = (cy, cx)
+
+    return area, centroid, mask_clean
+
+# Uso
+# Carregar imagem submarina simulada
+img = cv2.imread("imagem_submarina.jpg")  # BGR
+
+area, centroide, mascara = detectar_vermelho(img)
+
+print("Área do objeto vermelho:", area)
+print("Centroide:", centroide)
+
+# Visualizar
+if centroide:
+    cv2.circle(img, (int(centroide[1]), int(centroide[0])), 5, (0, 255, 0), -1)
+cv2.imshow("Imagem", img)
+cv2.imshow("Mascara Vermelha", mascara)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

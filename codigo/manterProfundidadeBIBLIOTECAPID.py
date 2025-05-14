@@ -1,21 +1,17 @@
+# depth_hold.py
 import time
 from ROV import ROVsensors, ROVactuators
+from pidController import PIDController
 
-# Inicializações
+# Inicializa sensores e atuadores
 sensors = ROVsensors()
 actuators = ROVactuators()
 
 pingSensor = sensors.connectPing1D("192.168.2.2", 9090)
 mavLink = sensors.connectMAVLINK("0.0.0.0", 14550)
 
-# Constantes PID
-Kp = 1.0
-Ki = 0.0
-Kd = 0.0
-
-# Variáveis do PID
-prev_error = 0.0
-integral = 0.0
+# Instância do controlador PID
+pid = PIDController(kp=1.0, ki=0.0, kd=0.0)
 
 def get_current_depth():
     """Lê a profundidade atual do sensor Ping1D com verificação de None"""
@@ -28,22 +24,14 @@ def get_current_depth():
 
 def depth_hold(target_depth):
     """Mantém profundidade usando controle PID"""
-    global prev_error, integral
-
+    pid.reset()
     print(f"Iniciando controle de profundidade para: {target_depth:.2f} m")
 
     try:
         while True:
             current_depth = get_current_depth()
             error = target_depth - current_depth
-            integral += error
-            derivative = error - prev_error
-            prev_error = error
-
-            # Cálculo do sinal de controle (thrust)
-            thrust = (Kp * error) + (Ki * integral) + (Kd * derivative)
-            
-            
+            thrust = pid.update(error)
 
             # Envia comando de empuxo
             actuators.set_thrust(thrust, connectionMAVLINK=mavLink)
@@ -63,5 +51,5 @@ def profundidadeInicial():
     return profundidade
 
 if __name__ == "__main__":
-    profundidade_alvo = profundidadeInicial()
+    #profundidade_alvo = profundidadeInicial()
     depth_hold(1.5)
