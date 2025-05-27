@@ -23,16 +23,6 @@ Done when studing in Escola Náutica Infante Dom Henrique.
       - Analise de telemetria sensorial
       - Manter a profundidade (PID controler)
       - INS autónomo 
-# ROV
-BlueROV2 é o drone subaquático da BlueRobotics.
-
-Tem os seguintes sensores: 
-- Ping Sonar Altimeter and Echosounder
-- Ping360 Scanning Imaging Sonar
-- Newton Subsea Gripper (Garra)
-- Sensores IMUs
-- Sensor de pressão
-- Câmera
 
 # Descrição do projeto/tecnologias
 ### Métodos de comunicação
@@ -68,4 +58,18 @@ No primeiro teste o proporcional estava muito elevado. Corrigindo isso conseguim
 
 #### Conclusões PID
 
+# Visão (Processamento de Imagem)
+
+
+
+# ROV
+BlueROV2 é o drone subaquático da BlueRobotics.
+
+Tem os seguintes sensores: 
+- Ping Sonar Altimeter and Echosounder
+- Ping360 Scanning Imaging Sonar
+- Newton Subsea Gripper (Garra)
+- Sensores IMUs
+- Sensor de pressão
+- Câmera
 
