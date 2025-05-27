@@ -33,22 +33,16 @@ Tem os seguintes sensores:
 - Sensores IMUs
 - Sensor de pressão
 - Câmera
-# Descrição do projeto/tecnologias
-## BlueOS ([https://blueos.cloud](https://blueos.cloud))
 
-BlueOS é um software open-source que está embutido no BlueROV2.
-Ativou-se o modo “Pirata” para conseguir tirar o máximo proveito do software BlueOS.
-## QGroundControl([https://qgroundcontrol.com](https://qgroundcontrol.com))
-QGroundControl é um software open-source que proporciona um ambiente de planejamento de missões, controle completo do ROV e calibração de sensores. Utiliza o protocolo de comunicação MAVLink.
+# Descrição do projeto/tecnologias
 ### Métodos de comunicação
 ##### PyMavLink
 PyMavLink foi utilizado para estabelecer uma conexão com o ROV via Script de Python. Pymavlink é uma biblioteca de processamento de mensagens MAVLink de baixo nível e de uso geral.
 
-Para utilizar #MAVLink primeiro ativou-se no #BlueOS um #MAVLinkendpoint.
+Para utilizar MAVLink primeiro ativou-se no BlueOS um MAVLinkendpoint.
 O MAVLinkendpoint usado foi o GCSServerLink (Ground Control Station Server Link). É um endpoint UDP que permite um GCS (Ground Control Station) conectar ao veículo via protocolo MAVLink. O GCS envia comandos para o ROV que solicitam dados de telemetria, recebendo em troca os dados pedidos, estados do sistema, dados dos sensores puro ou dados dos #sensores previamente tratados. Por ser um Endpoint UDP foi preciso fazer validação dos dados antes de enviar para o algoritmo.
 
 ##### Comunicação serie
-
 ComunicaçãoSerie foi utilizada para conectar aos seguintes sensores:
 - Ping Sonar Altimeter and Echosounder
 - Ping360 Scanning Imaging Sonar
