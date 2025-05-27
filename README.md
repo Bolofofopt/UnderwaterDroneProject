@@ -63,12 +63,8 @@ $$ L_s =  K_p+K_i/s+K_ds $$
 Como a mudança de cada parâmetro afeta a performance:
 ![[Pasted image 20250512113629.png]]
 
-Podemos analisar o proporcional muito elevado na análise do primeiro teste PID do ROV:
-![[dadosROV.pdf]]
-
-
-No segundo teste, depois de refazer o código para algo feito por mim e sem recorrer o uso de LLMs e com uma revisão do algoritmo pelo professor Teodoro tivemos o seguinte comportamento: 
-![[2recolhaPIDgraph.pdf]]
+No primeiro teste o proporcional estava muito elevado. Corrigindo isso conseguimos analisar a segunda recolha de telemetria.
+<p align="center"><img width="100%" src="img/segundaRecolha.png" /></p>
 
 #### Conclusões PID
 
