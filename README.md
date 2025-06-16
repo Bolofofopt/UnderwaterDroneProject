@@ -4,8 +4,6 @@
 
 --------------------------------------------------------------------------------
 
-This repository shows my projects done with the BlueRov2 submarine.
-
 Done when studing in Escola Náutica Infante Dom Henrique.
 
 <br/>
