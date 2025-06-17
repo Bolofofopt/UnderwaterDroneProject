@@ -1,3 +1,5 @@
+# código para processar dados de um ficheiro de texto (vindo do código para fazer
+# o controle PID só da profundidade) e exportar para Excel
 import re
 import pandas as pd
 

@@ -1,6 +1,5 @@
 from pymavlink import mavutil # type: ignore
 from brping import Ping1D # type: ignore
-import cv2 
 
 
 class ROVsensors():
@@ -66,32 +65,6 @@ class ROVsensors():
             print(f"Processed IMU Data: {attitude_data}")
             return attitude_data
 
-    def connectCamera(self, stream_url="udp://0.0.0.0:5600"):
-        """
-            _summary_
-
-            Returns:
-                camera: camera object
-        """
-        self.cap = cv2.VideoCapture(stream_url)
-        if not self.cap.isOpened():
-            raise RuntimeError("Não foi possível abrir o stream da câmera.")
-        print("Câmera conectada com sucesso.")
-
-    def get_camera_frame(self):
-        """Captura e retorna um frame da câmera"""
-        if self.cap is None or not self.cap.isOpened():
-            raise RuntimeError("Câmera não conectada ou stream fechado.")
-        ret, frame = self.cap.read()
-        if not ret:
-            raise RuntimeError("Falha ao ler frame da câmera.")
-        return frame
-
-    def release_camera(self):
-        """Libera o recurso da câmera"""
-        if self.cap:
-            self.cap.release()
-            self.cap = None
 
 class ROVactuators():
     def set_thrust(self, thrust, connectionMAVLINK):
