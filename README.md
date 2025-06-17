@@ -46,8 +46,12 @@ Sendo $u(t)$ a saída que o PID iria ter (já normalizada) e $u'(t)$ é a saída
       - Sensores IMUs
       - Sensor de pressão
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       - Câmera
 
+=======
+      - Câmera
+>>>>>>> Stashed changes
 =======
       - Câmera
 >>>>>>> Stashed changes
