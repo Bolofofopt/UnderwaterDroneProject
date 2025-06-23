@@ -1,0 +1,380 @@
+Opening 192.168.2.2:9090
+Connecting to MAVLink on 0.0.0.0:14550...
+Heartbeat from system (system 1 component 0)
+Arming the ROV...
+Iniciando controle de profundidade para: 1.50 m
+Distance: 1717  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 282
+Alvo: 1.50 m | Atual: 1.72 m | Thrust: -0.22
+Distance: 1689  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 310
+Alvo: 1.50 m | Atual: 1.69 m | Thrust: -0.19
+Distance: 1679  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 320
+Alvo: 1.50 m | Atual: 1.68 m | Thrust: -0.18
+Distance: 1651  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 349
+Alvo: 1.50 m | Atual: 1.65 m | Thrust: -0.15
+Distance: 1641  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 359
+Alvo: 1.50 m | Atual: 1.64 m | Thrust: -0.14
+Distance: 1611  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 389
+Alvo: 1.50 m | Atual: 1.61 m | Thrust: -0.11
+Distance: 1599  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 401
+Alvo: 1.50 m | Atual: 1.60 m | Thrust: -0.10
+Distance: 1554  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 445
+Alvo: 1.50 m | Atual: 1.55 m | Thrust: -0.05
+Distance: 1537  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 463
+Alvo: 1.50 m | Atual: 1.54 m | Thrust: -0.04
+Distance: 1483  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 516
+Alvo: 1.50 m | Atual: 1.48 m | Thrust: 0.02
+Distance: 1424  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 576
+Alvo: 1.50 m | Atual: 1.42 m | Thrust: 0.08
+Distance: 1406  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 594
+Alvo: 1.50 m | Atual: 1.41 m | Thrust: 0.09
+Distance: 1353  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 647
+Alvo: 1.50 m | Atual: 1.35 m | Thrust: 0.15
+Distance: 1302  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 698
+Alvo: 1.50 m | Atual: 1.30 m | Thrust: 0.20
+Distance: 1289  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 711
+Alvo: 1.50 m | Atual: 1.29 m | Thrust: 0.21
+Distance: 1260  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 740
+Alvo: 1.50 m | Atual: 1.26 m | Thrust: 0.24
+Distance: 1254  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 746
+Alvo: 1.50 m | Atual: 1.25 m | Thrust: 0.25
+Distance: 1243  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 756
+Alvo: 1.50 m | Atual: 1.24 m | Thrust: 0.26
+Distance: 1246  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 754
+Alvo: 1.50 m | Atual: 1.25 m | Thrust: 0.25
+Distance: 1262  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 738
+Alvo: 1.50 m | Atual: 1.26 m | Thrust: 0.24
+Distance: 1298  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 702
+Alvo: 1.50 m | Atual: 1.30 m | Thrust: 0.20
+Distance: 1316  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 683
+Alvo: 1.50 m | Atual: 1.32 m | Thrust: 0.18
+Distance: 1465  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 534
+Alvo: 1.50 m | Atual: 1.47 m | Thrust: 0.03
+Distance: 1528  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 472
+Alvo: 1.50 m | Atual: 1.53 m | Thrust: -0.03
+Distance: 1554  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 445
+Alvo: 1.50 m | Atual: 1.55 m | Thrust: -0.05
+Distance: 1624  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 375
+Alvo: 1.50 m | Atual: 1.62 m | Thrust: -0.12
+Distance: 1676  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 324
+Alvo: 1.50 m | Atual: 1.68 m | Thrust: -0.18
+Distance: 1691  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 308
+Alvo: 1.50 m | Atual: 1.69 m | Thrust: -0.19
+Distance: 1728  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 272
+Alvo: 1.50 m | Atual: 1.73 m | Thrust: -0.23
+Distance: 1733  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 266
+Alvo: 1.50 m | Atual: 1.73 m | Thrust: -0.23
+Distance: 1738  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 262
+Alvo: 1.50 m | Atual: 1.74 m | Thrust: -0.24
+Distance: 1732  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 268
+Alvo: 1.50 m | Atual: 1.73 m | Thrust: -0.23
+Distance: 1700  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 300
+Alvo: 1.50 m | Atual: 1.70 m | Thrust: -0.20
+Distance: 1635  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 365
+Alvo: 1.50 m | Atual: 1.64 m | Thrust: -0.14
+Distance: 1606  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 393
+Alvo: 1.50 m | Atual: 1.61 m | Thrust: -0.11
+Distance: 1512  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 488
+Alvo: 1.50 m | Atual: 1.51 m | Thrust: -0.01
+Distance: 1405  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 595
+Alvo: 1.50 m | Atual: 1.41 m | Thrust: 0.09
+Distance: 1371  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 629
+Alvo: 1.50 m | Atual: 1.37 m | Thrust: 0.13
+Distance: 1286  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 714
+Alvo: 1.50 m | Atual: 1.29 m | Thrust: 0.21
+Distance: 1256  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 744
+Alvo: 1.50 m | Atual: 1.26 m | Thrust: 0.24
+Distance: 1178  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 822
+Alvo: 1.50 m | Atual: 1.18 m | Thrust: 0.32
+Distance: 1126  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 874
+Alvo: 1.50 m | Atual: 1.13 m | Thrust: 0.37
+Distance: 1118  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 881
+Alvo: 1.50 m | Atual: 1.12 m | Thrust: 0.38
+Distance: 1107  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 893
+Alvo: 1.50 m | Atual: 1.11 m | Thrust: 0.39
+Distance: 1113  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 887
+Alvo: 1.50 m | Atual: 1.11 m | Thrust: 0.39
+Distance: 1138  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 862
+Alvo: 1.50 m | Atual: 1.14 m | Thrust: 0.36
+Distance: 1157  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 843
+Alvo: 1.50 m | Atual: 1.16 m | Thrust: 0.34
+Distance: 1224  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 776
+Alvo: 1.50 m | Atual: 1.22 m | Thrust: 0.28
+Distance: 1265  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 735
+Alvo: 1.50 m | Atual: 1.26 m | Thrust: 0.24
+Distance: 1343  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 657
+Alvo: 1.50 m | Atual: 1.34 m | Thrust: 0.16
+Distance: 1377  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 623
+Alvo: 1.50 m | Atual: 1.38 m | Thrust: 0.12
+Distance: 1478  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 522
+Alvo: 1.50 m | Atual: 1.48 m | Thrust: 0.02
+Distance: 1553  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 447
+Alvo: 1.50 m | Atual: 1.55 m | Thrust: -0.05
+Distance: 1571  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 429
+Alvo: 1.50 m | Atual: 1.57 m | Thrust: -0.07
+Distance: 1653  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 347
+Alvo: 1.50 m | Atual: 1.65 m | Thrust: -0.15
+Distance: 1674  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 326
+Alvo: 1.50 m | Atual: 1.67 m | Thrust: -0.17
+Distance: 1721  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 278
+Alvo: 1.50 m | Atual: 1.72 m | Thrust: -0.22
+Distance: 1733  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 266
+Alvo: 1.50 m | Atual: 1.73 m | Thrust: -0.23
+Distance: 1749  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 250
+Alvo: 1.50 m | Atual: 1.75 m | Thrust: -0.25
+Distance: 1707  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 292
+Alvo: 1.50 m | Atual: 1.71 m | Thrust: -0.21
+Distance: 1646  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 354
+Alvo: 1.50 m | Atual: 1.65 m | Thrust: -0.15
+Distance: 1620  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 379
+Alvo: 1.50 m | Atual: 1.62 m | Thrust: -0.12
+Distance: 1521  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 479
+Alvo: 1.50 m | Atual: 1.52 m | Thrust: -0.02
+Distance: 1486  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 514
+Alvo: 1.50 m | Atual: 1.49 m | Thrust: 0.01
+Distance: 1380  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 620
+Alvo: 1.50 m | Atual: 1.38 m | Thrust: 0.12
+Distance: 1278  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 722
+Alvo: 1.50 m | Atual: 1.28 m | Thrust: 0.22
+Distance: 1249  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 750
+Alvo: 1.50 m | Atual: 1.25 m | Thrust: 0.25
+Distance: 1168  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 832
+Alvo: 1.50 m | Atual: 1.17 m | Thrust: 0.33
+Distance: 1112  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 887
+Alvo: 1.50 m | Atual: 1.11 m | Thrust: 0.39
+Distance: 1103  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 897
+Alvo: 1.50 m | Atual: 1.10 m | Thrust: 0.40
+Distance: 1093  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 907
+Alvo: 1.50 m | Atual: 1.09 m | Thrust: 0.41
+Distance: 1118  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 881
+Alvo: 1.50 m | Atual: 1.12 m | Thrust: 0.38
+Distance: 1133  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 867
+Alvo: 1.50 m | Atual: 1.13 m | Thrust: 0.37
+Distance: 1206  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 794
+Alvo: 1.50 m | Atual: 1.21 m | Thrust: 0.29
+Distance: 1238  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 762
+Alvo: 1.50 m | Atual: 1.24 m | Thrust: 0.26
+Distance: 1504  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 496
+Alvo: 1.50 m | Atual: 1.50 m | Thrust: -0.00
+Distance: 1669  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 330
+Alvo: 1.50 m | Atual: 1.67 m | Thrust: -0.17
+Distance: 1721  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 278
+Alvo: 1.50 m | Atual: 1.72 m | Thrust: -0.22
+Distance: 1804  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 195
+Alvo: 1.50 m | Atual: 1.80 m | Thrust: -0.30
+Distance: 1829  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 171
+Alvo: 1.50 m | Atual: 1.83 m | Thrust: -0.33
+Distance: 1871  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 129
+Alvo: 1.50 m | Atual: 1.87 m | Thrust: -0.37
+Distance: 1868  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 131
+Alvo: 1.50 m | Atual: 1.87 m | Thrust: -0.37
+Distance: 1826  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 173
+Alvo: 1.50 m | Atual: 1.83 m | Thrust: -0.33
+Distance: 1814  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 185
+Alvo: 1.50 m | Atual: 1.81 m | Thrust: -0.31
+Distance: 1605  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 395
+Alvo: 1.50 m | Atual: 1.60 m | Thrust: -0.10
+Distance: 1479  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 520
+Alvo: 1.50 m | Atual: 1.48 m | Thrust: 0.02
+Distance: 1425  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 575
+Alvo: 1.50 m | Atual: 1.43 m | Thrust: 0.07
+Distance: 1267  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 733
+Alvo: 1.50 m | Atual: 1.27 m | Thrust: 0.23
+Distance: 1142  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 858
+Alvo: 1.50 m | Atual: 1.14 m | Thrust: 0.36
+Distance: 1100  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 899
+Alvo: 1.50 m | Atual: 1.10 m | Thrust: 0.40
+Distance: 997   Confidence: 100%
+Thrust X: 0, Y: 0, Z: 1000
+Alvo: 1.50 m | Atual: 1.00 m | Thrust: 0.50
+Distance: 993   Confidence: 100%
+Thrust X: 0, Y: 0, Z: 1000
+Alvo: 1.50 m | Atual: 0.99 m | Thrust: 0.51
+Distance: 993   Confidence: 100%
+Thrust X: 0, Y: 0, Z: 1000
+Alvo: 1.50 m | Atual: 0.99 m | Thrust: 0.51
+Distance: 1091  Confidence: 83%
+Thrust X: 0, Y: 0, Z: 909
+Alvo: 1.50 m | Atual: 1.09 m | Thrust: 0.41
+Distance: 1135  Confidence: 83%
+Thrust X: 0, Y: 0, Z: 865
+Alvo: 1.50 m | Atual: 1.14 m | Thrust: 0.36
+Distance: 1229  Confidence: 83%
+Thrust X: 0, Y: 0, Z: 770
+Alvo: 1.50 m | Atual: 1.23 m | Thrust: 0.27
+Distance: 1271  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 729
+Alvo: 1.50 m | Atual: 1.27 m | Thrust: 0.23
+Distance: 1287  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 713
+Alvo: 1.50 m | Atual: 1.29 m | Thrust: 0.21
+Distance: 1319  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 681
+Alvo: 1.50 m | Atual: 1.32 m | Thrust: 0.18
+Distance: 1377  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 623
+Alvo: 1.50 m | Atual: 1.38 m | Thrust: 0.12
+Distance: 1409  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 591
+Alvo: 1.50 m | Atual: 1.41 m | Thrust: 0.09
+Distance: 1501  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 499
+Alvo: 1.50 m | Atual: 1.50 m | Thrust: -0.00
+Distance: 1588  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 411
+Alvo: 1.50 m | Atual: 1.59 m | Thrust: -0.09
+Distance: 1613  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 387
+Alvo: 1.50 m | Atual: 1.61 m | Thrust: -0.11
+Distance: 1673  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 326
+Alvo: 1.50 m | Atual: 1.67 m | Thrust: -0.17
+Distance: 1693  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 306
+Alvo: 1.50 m | Atual: 1.69 m | Thrust: -0.19
+Distance: 1742  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 258
+Alvo: 1.50 m | Atual: 1.74 m | Thrust: -0.24
+Distance: 1763  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 237
+Alvo: 1.50 m | Atual: 1.76 m | Thrust: -0.26
+Distance: 1764  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 236
+Alvo: 1.50 m | Atual: 1.76 m | Thrust: -0.26
+Distance: 1749  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 250
+Alvo: 1.50 m | Atual: 1.75 m | Thrust: -0.25
+Distance: 1726  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 274
+Alvo: 1.50 m | Atual: 1.73 m | Thrust: -0.23
+Distance: 1672  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 328
+Alvo: 1.50 m | Atual: 1.67 m | Thrust: -0.17
+Distance: 1643  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 357
+Alvo: 1.50 m | Atual: 1.64 m | Thrust: -0.14
+Distance: 1545  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 455
+Alvo: 1.50 m | Atual: 1.54 m | Thrust: -0.04
+Distance: 1434  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 566
+Alvo: 1.50 m | Atual: 1.43 m | Thrust: 0.07
+Distance: 1398  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 602
+Alvo: 1.50 m | Atual: 1.40 m | Thrust: 0.10
+Distance: 1293  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 707
+Alvo: 1.50 m | Atual: 1.29 m | Thrust: 0.21
+Distance: 1217  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 782
+Alvo: 1.50 m | Atual: 1.22 m | Thrust: 0.28
+Distance: 1194  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 806
+Alvo: 1.50 m | Atual: 1.19 m | Thrust: 0.31
+Distance: 1145  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 855
+Alvo: 1.50 m | Atual: 1.15 m | Thrust: 0.35
+Distance: 1145  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 855
+Alvo: 1.50 m | Atual: 1.15 m | Thrust: 0.35
+Distance: 1185  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 815
+Alvo: 1.50 m | Atual: 1.19 m | Thrust: 0.31
+Distance: 1245  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 754
+Alvo: 1.50 m | Atual: 1.25 m | Thrust: 0.25
+Distance: 1270  Confidence: 100%
+Thrust X: 0, Y: 0, Z: 730
+Alvo: 1.50 m | Atual: 1.27 m | Thrust: 0.23
+Distance: 1304  Confidence: 100%
+Controle de profundidade interrompido pelo usuário.
+Disarming the ROV...

@@ -101,6 +101,7 @@ class ROVsensors():
         Args:
             connectionMAVLINK: MAVLINK connection object
         """
+        connectionMAVLINK.set_mode('MANUAL')
         print("Arming the ROV...")
         connectionMAVLINK.mav.command_long_send(
             connectionMAVLINK.target_system,
@@ -155,6 +156,7 @@ class ROVactuators():
         y_mav = int(thrust_y * 1000)
         z_mav = int(thrust_z * 1000)
 
+        print(f"Thrust X: {x_mav}, Y: {y_mav}, Z: {z_mav}")
         connectionMAVLINK.mav.manual_control_send(
             connectionMAVLINK.target_system,
             x_mav, y_mav, z_mav,

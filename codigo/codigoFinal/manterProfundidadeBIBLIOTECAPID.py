@@ -9,6 +9,7 @@ actuators = ROVactuators()
 
 pingSensor = sensors.connectPing1D("192.168.2.2", 9090)
 mavLink = sensors.connectMAVLINK("0.0.0.0", 14550)
+sensors.armROV(connectionMAVLINK=mavLink)
 
 # Instância do controlador PID
 pid = PIDController(kp=1.0, ki=0.0, kd=0.0)
@@ -44,6 +45,7 @@ def depth_hold(target_depth):
 
     except KeyboardInterrupt:
         print("Controle de profundidade interrompido pelo usuário.")
+        sensors.disarmROV(connectionMAVLINK=mavLink)
 
 def profundidadeInicial():
     """Lê a profundidade inicial para ser usada como referência"""

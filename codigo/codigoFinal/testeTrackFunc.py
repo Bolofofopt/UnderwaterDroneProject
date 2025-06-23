@@ -12,8 +12,8 @@ from redTrackCentroide import redTrackCentroideError
 def inicializar_componentes():
     sensors = ROVsensors()
     actuadores = ROVactuators()
-    pidLateral = PIDController(kp=1.0, ki=0.0, kd=0.0)
-    pidVertical = PIDController(kp=0.5, ki=0.0, kd=0.0)
+    pidLateral = PIDController(kp=0.3, ki=0.0, kd=0.0)
+    pidVertical = PIDController(kp=0.2, ki=0.0, kd=0.0)
     tracker = redTrackCentroideError()
     #pingSensor = sensors.connectPing1D("192.168.2.2", 9090)
     mavLink = sensors.connectMAVLINK("0.0.0.0", 14550)
@@ -100,6 +100,7 @@ def main():
                     )
                 else:
                     print("Centroide fora do centro")
+                    print(pid_lateral_output, pid_vertical_output)
                     actuadores.set_thrust(
                         thrust_z=pid_vertical_output,
                         thrust_y=pid_lateral_output,

@@ -3,11 +3,15 @@ import numpy as np
 
 class redTrackCentroideError:
     def __init__(self):
-        self.lower_red1 = np.array([0, 100, 50])
+        # faixa 1
+        self.lower_red1 = np.array([0, 50, 20])
         self.upper_red1 = np.array([10, 255, 255])
-        self.lower_red2 = np.array([160, 100, 50])
+
+        # faixa 2
+        self.lower_red2 = np.array([160, 50, 20])
         self.upper_red2 = np.array([179, 255, 255])
-        self.kernel = np.ones((5, 5), np.uint8)
+
+        self.kernel = np.ones((1, 1), np.uint8)
 
     def process_image(self, image_bgr, draw_error=True):
         """GPT code
@@ -83,11 +87,11 @@ class redTrackCentroideError:
         """
         return dy, dx
 
-    def inicializar_gravacao_video(nome_ficheiro='analise_ml_output.avi', largura=640, altura=480, fps=20.0):
+    def inicializar_gravacao_video(self, nome_ficheiro='analise_ml_output.avi', largura=640, altura=480, fps=20.0):
         fourcc = cv2.VideoWriter_fourcc(*'XVID')
         return cv2.VideoWriter(nome_ficheiro, fourcc, fps, (largura * 2, altura))  # x2 por causa da concatenação lado a lado
 
-    def conversion(player):
+    def conversion(self, player):
         """Converte o player VLC para OpenCV"""
         snapshot_path = "vlc_snapshot.png"
         result = player.video_take_snapshot(0, snapshot_path, 640, 480)
