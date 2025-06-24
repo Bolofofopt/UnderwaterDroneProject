@@ -27,8 +27,6 @@ Project Role: Project Manager overseeing 6 teams comprising 12 members in total.
 │ ├── rCritica_ROVarticleOcean.pdf # Recensão crítica a um artigo científico
 │ ├── REPORTprojetoBlueROV2.pdf     # Relatório final do projeto BlueROV2
 │ └── 📁 telemetria/                # Dados e observações de testes reais
-├── 📁 models/                      # Modelos salvos (ex: redes neurais ou PID tunados)
-├── 📁 tests/                       # Testes unitários e de integração
 ├── LICENSE                         # Licença de uso
 ├── README.md                       
 ├── pyvenv.cfg                      # Configuração do ambiente virtual Python
