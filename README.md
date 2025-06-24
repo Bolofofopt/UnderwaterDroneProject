@@ -9,7 +9,7 @@ Done when studing in Escola Náutica Infante Dom Henrique.
 <br/>
 
 Project Role: Project Manager overseeing 6 teams comprising 12 members in total.
-
+```text
 📦 my-project/
 ├── 📁 codigo/                      # Código-fonte do projeto
 │ ├── 📁 codigoFinal/               # Código usado no último teste real
@@ -35,7 +35,7 @@ Project Role: Project Manager overseeing 6 teams comprising 12 members in total.
 ├── requirements.txt                # Lista de dependências Python
 ├── .gitattributes                  # Configurações de Git para arquivos de texto
 └── .gitignore                      # Arquivos ignorados pelo Git
-
+```
 # Results:
 ## PID
 <p align="center"><img width="100%" src="img/report2.png" /></p>
