@@ -10,7 +10,7 @@ Done when studing in Escola Náutica Infante Dom Henrique.
 
 Project Role: Project Manager overseeing 6 teams comprising 12 members in total.
 ```text
-📦 my-project/
+📦 UnderwaterDroneProject/
 ├── 📁 codigo/                      # Código-fonte do projeto
 │ ├── 📁 codigoFinal/               # Código usado no último teste real
 │ │ ├── analisaCSVFINAL.py          # Analisa o CSV derivado do testeTrackFunc.py
