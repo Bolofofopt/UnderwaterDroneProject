@@ -34,12 +34,4 @@ Project Role: Project Manager overseeing 6 teams comprising 12 members in total.
 ├── .gitattributes                  # Configurações de Git para arquivos de texto
 └── .gitignore                      # Arquivos ignorados pelo Git
 ```
-# Results:
-## PID
-<p align="center"><img width="100%" src="img/report2.png" /></p>
-
-<p align="center"><img width="100%" src="img/report3.png" /></p>
-
-## Vision
-<p align="center"><img width="100%" src="img/report1.png" /></p>
 
