@@ -35,3 +35,6 @@ Project Role: Project Leader overseeing 6 teams comprising 12 members in total.
 └── .gitignore                      # Arquivos ignorados pelo Git
 ```
 
+
+<img width="1280" height="799" alt="image" src="https://github.com/user-attachments/assets/bf67898a-7032-4f50-88e3-0a68e9e5567e" />
+
