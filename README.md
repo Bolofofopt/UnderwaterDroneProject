@@ -12,7 +12,7 @@ Project Role: Project Leader overseeing 6 teams comprising 12 members in total.
 ```text
 📦 UnderwaterDroneProject/
 ├── 📁 codigo/                      # Código-fonte do projeto
-│ ├── 📁 codigoFinal/               # Código usado no último teste real
+│ ├── 📁 codigojuLHO/               # Código usado no último teste 
 │ │ ├── analisaCSVFINAL.py          # Analisa o CSV derivado do testeTrackFunc.py
 │ │ ├── pidController.py            # Classe do controlador PID
 │ │ ├── redTrackCentroide.py        # Classe responsável pela visão computacional
