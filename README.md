@@ -8,7 +8,7 @@ Done when studing in Escola Náutica Infante Dom Henrique.
 
 <br/>
 
-Project Role: Project Leader overseeing 6 teams comprising 12 members in total.
+Project Role: Project Leader overseeing 6 multidisciplinary teams  comprising 12 members in total.
 ```text
 📦 UnderwaterDroneProject/
 ├── 📁 codigo/                      # Código-fonte do projeto
